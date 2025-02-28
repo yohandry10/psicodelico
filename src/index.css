@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'CryoGraffiti-Regular';
+  src: url('/fonts/CryoGraffiti-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HolyStories';
+  src: url('/fonts/HolyStoriesRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /* Aquí, por defecto, usaremos HolyStories */
+  font-family: 'HolyStories', system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #00ff88 0%, #00cc66 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
